@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 .App {
   text-align: center;
+  background-color: white;
 }
 
 .App-logo {
@@ -23,7 +25,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +36,108 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* css here App */
+.calendar-grid{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-template-rows: auto;
+  width: 20%;
+  gap:5px;
+}
+.calendar-day {
+   padding: 10%;
+   border:1px solid red;
+   background-color: #359afd;
+   color: white;
+}
+.colored{
+  
+  color: white;
+}
+.Logo-outer{
+  padding: 16px;
+  width: 50%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.06), 0px 7px 9px rgba(0, 0, 0, 0.12), 0px 20px 25px -8px rgba(0, 0, 0, 0.18);
+  margin: auto;
+  margin-top: 10%;
+}
+.Logo{
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.Logo >img{
+  width: 30%;
+}
+.Logo >p{
+  width: 80%;
+ margin: auto;
+ color: rgba(32, 203, 34, 0.88);
+ font-size: 14px;
+ line-height: 1.5;
+}
+form >div>input{
+  width: 96%;
+  padding: 10px;
+  
+  margin: auto;
+}
+form >div{
+  margin-bottom: 1rem;
+  width: 100%;
+}
+form button{
+  width: 100%;
+  padding: 10px ;
+  background-color: rgba(32, 203, 34, 0.88);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.sidebar{
+  background: #831e8e;
+  color: #fff;
+  height: 100vh;
+  width: 300px;
+  transition: all 0.5s;
+}
+.top_section{
+  display: block;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 15px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.link:hover{
+  background:lightskyblue;
+  color: #000;
+  transition: all 0.5s;
+}
+.active{
+  background: lightskyblue;
+  color: #000;
+}
+.icon, .link_text{
+  font-size: 20px;
+}
+.icon{
+  display: flex;
+    align-items: center;
 }
